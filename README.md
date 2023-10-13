@@ -1,7 +1,7 @@
 # README #
 
 This is an installation mirror for xtream ui software.
-
+Ubuntu Version 18.04.06 server - LTS
 ### How do I install? ###
 
 *update your ubuntu first, then install panel
