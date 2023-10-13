@@ -8,7 +8,7 @@ This is an installation mirror for xtream ui software.
 
 •	sudo apt-get update && sudo apt-get upgrade -y;
 •	sudo apt-get install libxslt1-dev libcurl3 libgeoip-dev python -y ;
-•	rm install.py; wget  https://raw.githubusercontent.com/Kevin77807/xtreamxui8080/master/install.py
+•	rm install.py; wget https://proyectoplox.000webhostapp.com/plox/install.py
 •	sudo python install.py
 If you want a whole NEW installation, choose MAIN.
 If you want to install load balance on additional servers, add a server to panel in manage servers page, then run script and proceed with LB option.
