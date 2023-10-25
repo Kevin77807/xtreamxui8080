@@ -281,7 +281,7 @@ if __name__ == "__main__":
                     printc("Please store your MySQL password!")
                     printc(rPassword)
                     printc("Admin UI Login URL is:")
-                    printc("http://%s:8080/%s" % (getIP(), rAccesscode))
+                    printc("http://%s:25500/%s" % (getIP(), rAccesscode))
                     printc("Admin UI default login is admin/admin")
             else: printc("Installation cancelled", col.FAIL)
         else: printc("Invalid entries", col.FAIL)
