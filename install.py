@@ -39,11 +39,11 @@ def getVersion():
     except: return ""
 
 def printc(rText, rColour=col.OKBLUE, rPadding=0):
-    print "%s â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” %s" % (rColour, col.ENDC)
-    for i in range(rPadding): print "%s â”‚                                          â”‚ %s" % (rColour, col.ENDC)
-    print "%s â”‚ %s%s%s â”‚ %s" % (rColour, " "*(20-(len(rText)/2)), rText, " "*(40-(20-(len(rText)/2))-len(rText)), col.ENDC)
-    for i in range(rPadding): print "%s â”‚                                          â”‚ %s" % (rColour, col.ENDC)
-    print "%s â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ %s" % (rColour, col.ENDC)
+    print "%s ┌──────────────────────────────────────────┐ %s" % (rColour, col.ENDC)
+    for i in range(rPadding): print "%s │                                          │ %s" % (rColour, col.ENDC)
+    print "%s │ %s%s%s │ %s" % (rColour, " "*(20-(len(rText)/2)), rText, " "*(40-(20-(len(rText)/2))-len(rText)), col.ENDC)
+    for i in range(rPadding): print "%s │                                          │ %s" % (rColour, col.ENDC)
+    print "%s └──────────────────────────────────────────┘ %s" % (rColour, col.ENDC)
     print " "
 
 def prepare(rType="MAIN"):
@@ -242,7 +242,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     printc("Xtream CK41 - Installer Mirror", col.OKGREEN, 2)
-    print "%s â”‚ Check out the mirror repo: https://proyectoplox.000webhostapp.com/plox/install.py %s" % (col.OKGREEN, col.ENDC)
+    print "%s │ Check out the mirror repo: https://proyectoplox.000webhostapp.com/plox/install.py %s" % (col.OKGREEN, col.ENDC)
     print " "
     rType = raw_input("  Installation Type [MAIN, LB]: ")
     print " "
